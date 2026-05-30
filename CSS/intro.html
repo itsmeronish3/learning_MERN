@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: red;
+            text-align: center;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .first{
+            color: blue;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #my[first="true"]{
+            color: purple;
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        </style>
+</head>
+<body>
+    <div class="demo"></div>
+    <!-- .demo_class_name -->
+    <p class="demo">This is a demo paragraph.</p>
+    <!-- p.demo_class_name -->
+     <!-- CSS INTRODUCTION
+    -styling language
+    -cascading style sheets 
+    -to make webpage attractive, responsive
+    -case sensitive
+
+    CSS Structure
+    selector{
+        property: value;
+}
+        selector - element on which css is applied
+        property - attribute of the selector which is being styled
+        value - value of the property
+    selector types-
+    1. element selector-tag names of html elements eg: h1,p,div,span
+    2. class selector- user defined class name with a dot(.) eg: .demo
+    3. id selector- user defined id name with a hash(#) eg: #demo
+
+    Note: An element can have multiple classes but only one id.
+
+
+    priority of selectors:ID[attribute="value"]>  class[attribute="value"] > ID > Class > Element 
+    specificity
+
+    Attribute selectors:use[attribute="value"], makes the styling more specific and has higher priority than class selectors
+
+
+
+
+     -->
+
+<h1 class="first" id="my" first="true">CSS Introduction</h1>
+
+<h1 class="first" id="my" first="false">CSS Introduction</h1>
+
+<p class="first">This is the first paragraph.</p>
+</body>
+</html>

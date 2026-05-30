@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* body{
+            background-image: url(https://www.google.com/imgres?q=images%20link&imgurl=https%3A%2F%2Fassets.nintendo.eu%2Fimage%2Fupload%2Ff_auto%2Fq_auto%2Fv1674436794%2FNAL%2FArticles%2FGet%2520to%2520know%2520Link%2520and%2520his%2520many%2520adventures%2Fhero.jpg&imgrefurl=https%3A%2F%2Fwww.nintendo.com%2Fau%2Fnews-and-articles%2Fget-to-know-link-and-his-many-adventures%2F%3Fsrsltid%3DAfmBOooaCdKahTo2zkl-ZxPEwv0YIeNhPuTLp4pfkhyKRLD-kJWFeosb&docid=QKACxbZYbP6ZwM&tbnid=1nDA4exaRhS93M&vet=12ahUKEwiI6ai00NuUAxX74TgGHZK3DXQQnPAOegQIIRAB..i&w=1920&h=1080&hcb=2&ved=2ahUKEwiI6ai00NuUAxX74TgGHZK3DXQQnPAOegQIIRAB);
+            background-clip: text;
+
+        }*/
+        .demo1{
+            height: 200px;
+           /* background-color: blue;*/
+           background-color: rgb(0,0,255);
+           /* rgb(red, green, blue) */
+           background-color: hsl (240, 100%, 50%);
+           /* hsl(hue, saturation, lightness) */
+           /* hue - color 0 to 259
+           saturation presence of color - 0 to 100
+           lightness presence of light 0 to 100%- 0 to 100 */
+           background-color: #aaaaaa;
+           /* background-color: #aaa */
+           /* #rrggbb : 00 to ff */
+           /* rrggbbaa - aa - opacity */
+        }
+       /* h1{
+              background-color: #ffffff40;
+            font-size: 120px;
+            color:transparent
+        } */
+        .demo2{
+            height: 30vh;
+            background-image: linear-gradient(75deg, red 25%, rgb(255,255,0) 50%, #0000ff 80%, transparent 100%);
+        }
+        .demo3{
+            height: 30vh;
+            background-image: repeating-linear-gradient(75deg, red 25%, rgb(255,255,0) 50%, #0000ff 80%, transparent 100%);
+        }
+        .demo4{
+            height: 30vh;
+            background-image: radial-gradient(circle at 50% 50%, red, rgb(255,255,0), #0000ff, transparent);
+        }
+        .demo5{
+            height: 30vh;
+            background-image: repeating-radial-gradient(circle at 50% 50%, red, rgb(255,255,0), #0000ff, transparent);
+        }
+        .demo6{
+              height: 30vh;
+              width: 50%;
+              background-image: url(https://www.google.com/imgres?q=images&imgurl=https%3A%2F%2Fimg.magnific.com%2Ffree-photo%2Fbeautiful-lake-mountains_395237-44.jpg%3Fsemt%3Dais_hybrid%26w%3D740%26q%3D80&imgrefurl=https%3A%2F%2Fwww.magnific.com%2Ffree-photos-vectors%2Fnature-view&docid=KOnk6JvKoUH3iM&tbnid=2PjAjdQXPKLxwM&vet=12ahUKEwjH8P_EkN6UAxUEyzgGHQ7SNtUQnPAOegQIJBAB..i&w=740&h=493&hcb=2&ved=2ahUKEwjH8P_EkN6UAxUEyzgGHQ7SNtUQnPAOegQIJBAB);
+              background-position: center;
+              background-attachment: fixed;
+              /* large image */
+        }
+        .demo7{
+              height: 60vh;
+                width: 50%;
+                background-image: url(https://www.google.com/imgres?q=small%20images%20icon&imgurl=https%3A%2F%2Fe7.pngegg.com%2Fpngimages%2F487%2F456%2Fpng-clipart-computer-icons-business-logo-youtube-cartoon-green-small-rocket-cartoon-character-painted-thumbnail.png&imgrefurl=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fsearch%3Fq%3Dsmall%2Bicons&docid=5c_EiVyz04evcM&tbnid=o1f3E8i7lBUJ6M&vet=12ahUKEwiit77jkN6UAxXPwzgGHR_6FAYQnPAOegQIKBAB..i&w=348&h=348&hcb=2&ved=2ahUKEwiit77jkN6UAxXPwzgGHR_6FAYQnPAOegQIKBAB);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-size: contain;
+                background: yellow linear-gradient(75deg, red 25%, rgb(255,255,0) 50%, #0000ff 80%, transparent 100%) url(https://www.google.com/imgres?q=small%20images%20icon&imgurl=https%3A%2F%2Fe7.pngegg.com%2Fpngimages%2F487%2F456%2Fpng-clipart-computer-icons-business-logo-youtube-cartoon-green-small-rocket-cartoon-character-painted-thumbnail.png&imgrefurl=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fsearch%3Fq%3Dsmall%2Bicons&docid=5c_EiVyz04evcM&tbnid=o1f3E8i7lBUJ6M&vet=12ahUKEwiit77jkN6UAxXPwzgGHR_6FAYQnPAOegQIKBAB..i&w=348&h=348&hcb=2&ved=2ahUKEwiit77jkN6UAxXPwzgGHR_6FAYQnPAOegQIKBAB);
+                /* small image */
+               }       
+    </style>
+</head>
+<body>
+    <div class="body">
+        <h1>Hello World</h1>
+    </div>
+    <div class="demo1"></div>
+    <div class="demo2"></div>
+    <div class="demo3"></div>
+    <div class="demo4"></div>
+    <div class="demo5"></div>
+    <!-- gradient background color -->
+
+    <div class="demo5"></div>
+    <div class="demo7"></div>
+</body>
+</html>
