@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .static{
+            position: static;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+        .relative{
+            position: relative;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+        </style>
+</head>
+<body>
+    <!-- 
+        positions:
+        1. static (default) - elements are positioned according to the normal flow of the document. top, bottom, left, right properties have no effect on static elements.
+        2. relative - elements are positioned relative to their normal position. top, bottom, left, right properties will move the element from its normal position.
+        3. absolute - elements are positioned relative to the nearest positioned ancestor (not static). If there is no positioned ancestor, it will be positioned relative to the initial containing block (usually the viewport). top, bottom, left, right properties will move the element from its normal position.
+        4. fixed - elements are positioned relative to the viewport, which means they stay in the same place even if the page is scrolled. top, bottom, left, right properties will move the element from its normal position.
+        5. sticky - elements are positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).   
+
+    -->
+    <div class="static"></div>
+    <div class="relative"></div>
+    <div class="static"></div>
+
+</body>
+</html>
